@@ -5,6 +5,260 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>METHAL NETTOYAGE SERVICE — خدمات التنظيف الاحترافي</title>
   <style>
+    :root {
+      --primary-color: #0066cc;
+      --secondary-color: #0288d1;
+      --accent-color: #25d366;
+      --dark-color: #1a252f;
+      --light-bg: #f8fafc;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      color: #333333;
+      line-height: 1.7;
+    }
+
+    /* شريط علوي بسيط */
+    .top-announcement {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 8px 15px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    /* الهيدر */
+    header {
+      background: var(--white);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #e2e8f0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      color: var(--primary-color);
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    header p {
+      color: #64748b;
+      font-size: 1rem;
+    }
+
+    /* قسم الإشهار الواقعي للعمال */
+    .workers-hero {
+      max-width: 950px;
+      margin: 30px auto;
+      background: var(--white);
+      border-radius: 16px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e2e8f0;
+      text-align: center;
+    }
+
+    .workers-hero h2 {
+      color: var(--dark-color);
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .workers-hero p {
+      color: #4a5568;
+      font-size: 1.1rem;
+      max-width: 780px;
+      margin: 0 auto 20px auto;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-width: 750px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    /* مميزات عمال النظافة */
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .feature-item {
+      background: #edf2f7;
+      color: var(--dark-color);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    /* زر الواتساب المباشر */
+    .cta-button {
+      background-color: var(--accent-color);
+      color: var(--white);
+      padding: 15px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.15rem;
+      font-weight: 700;
+      display: inline-block;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+    }
+
+    /* قسم الخدمات */
+    .services-container {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .services-title {
+      text-align: center;
+      color: var(--dark-color);
+      font-size: 1.75rem;
+      margin-bottom: 25px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 25px 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      border-top: 5px solid var(--primary-color);
+      text-align: center;
+    }
+
+    .service-card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card h4 {
+      color: var(--dark-color);
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      color: #718096;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: var(--dark-color);
+      color: #a0aec0;
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 50px;
+      font-size: 0.95rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط علوي ترحيبي -->
+  <div class="top-announcement">
+    ✨ METHAL NETTOYAGE — فريق نظافة احترافي فـ المحمدية والنواحي
+  </div>
+
+  <!-- الهيدر -->
+  <header>
+    <h1>METHAL NETTOYAGE SERVICE</h1>
+    <p>خدمات التنظيف الشامل والعميق للمنازل والمكاتب</p>
+  </header>
+
+  <!-- الإشهار الواقعي لعمال النظافة -->
+  <div class="workers-hero">
+    <h2>عمال نظافة محترفون ومجهزون بالكامل فـ خدمتكم 🧽✨</h2>
+    <p>نحن نوفر لكم طاقم عمل مدرب ومجهز بأحدث أدوات التنظيف ومواد التعقيم الآمنة، لنضمن لكم نظافة عميقة للمنازل، الفيلا، والمكاتب بأعلى معايير الجودة والسرعة.</p>
+
+    <!-- صورة عمال التنظيف -->
+    <img src="http://googleusercontent.com/image_collection/image_retrieval/8248173660360740880_0" alt="METHAL CLEANING WORKERS" class="hero-img">
+
+    <!-- مميزات العمال -->
+    <div class="features-list">
+      <span class="feature-item">✔ طاقم مدرب ومحترف</span>
+      <span class="feature-item">✔ معدات تنظيف حديثة</span>
+      <span class="feature-item">✔ سرعة وإتقان فـ العمل</span>
+      <span class="feature-item">✔ التزام تام بالمواعيد</span>
+    </div>
+
+    <div>
+      <a href="https://wa.me/212630483159" class="cta-button">
+        تواصل مع فريق التنظيف عبر الواتساب 💬
+      </a>
+    </div>
+  </div>
+
+  <!-- قائمة الخدمات -->
+  <div class="services-container">
+    <h3 class="services-title">خدماتنا</h3>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">🏠</div>
+        <h4>تنظيف المنازل والفيلا</h4>
+        <p>تنظيف شامل وعميق للمنازل والشقق بعد البناء أو السكن.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🏢</div>
+        <h4>تنظيف المكاتب والشركات</h4>
+        <p>عقود ونظافة دورية واحترافية للمحلات والمكاتب التجارية.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🛋️</div>
+        <h4>غسيل الفرش والسجاد</h4>
+        <p>تنظيف وتعقيم الأثاث، الصالونات، والسجاد بإتقان.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🪟</div>
+        <h4>تنظيف النوافذ والواجهات</h4>
+        <p>تلميع النوافذ والواجهات الزجاجية بدقة عالية.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2026 <strong>METHAL NETTOYAGE SERVICE</strong> — جميع الحقوق محفوظة</p>
+    <p>المحمدية والجهات المجاورة | الهاتف والواتساب: 0630483159</p>
+  </footer>
+
+</body>
+</html>
+html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>METHAL NETTOYAGE SERVICE — خدمات التنظيف الاحترافي</title>
+  <style>
     * {
       box-sizing: border-box;
       margin: 0;
